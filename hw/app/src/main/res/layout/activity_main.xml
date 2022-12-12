@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity1" >
+
+    <EditText
+        android:id="@+id/poshta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="          To"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_view"
+        android:drawableStart="@drawable/ic_baseline_markunread_24"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/zagalovok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_view"
+        android:drawableLeft="@drawable/ic_baseline_format_align_left_24"
+        android:ems="10"
+        android:hint="          Heading"
+        android:minHeight="48dp"
+        android:paddingStart="20dp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/soobshenie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zagalovok"
+        android:layout_alignLeft="@+id/zagalovok"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/message_edit_text_view"
+        android:drawableLeft="@drawable/ic_baseline_message_24"
+        android:ems="10"
+        android:hint="          Message"
+        android:minHeight="48dp"
+        android:paddingStart="20dp" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soobshenie"
+        android:layout_alignLeft="@+id/soobshenie"
+        android:layout_marginLeft="141dp"
+        android:layout_marginTop="33dp"
+        android:text="Send" />
+
+</RelativeLayout>
