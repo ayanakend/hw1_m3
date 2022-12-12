@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -19,9 +18,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editTextSubject=(EditText)findViewById(R.id.zagalovok);
-        editTextMessage=(EditText)findViewById(R.id.soobshenie);
-        editTextEmail=(EditText)findViewById(R.id.poshta);
+        editTextSubject=(EditText)findViewById(R.id.heading);
+        editTextMessage=(EditText)findViewById(R.id.message);
+        editTextEmail=(EditText)findViewById(R.id.mail);
 
         send=(Button)findViewById(R.id.button1);
 
