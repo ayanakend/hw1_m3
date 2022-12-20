@@ -23,7 +23,6 @@ public class MainActivity extends Activity {
         editTextEmail=(EditText)findViewById(R.id.mail);
 
         send=(Button)findViewById(R.id.button1);
-
         send.setOnClickListener(new OnClickListener(){
 
             @Override
@@ -32,24 +31,15 @@ public class MainActivity extends Activity {
                 String message=editTextMessage.getText().toString();
                 String to=editTextEmail.getText().toString();
 
-
-
                 Intent email = new Intent(Intent.ACTION_SEND);
                 email.putExtra(Intent.EXTRA_EMAIL, new String[]{ to});
                 email.putExtra(Intent.EXTRA_SUBJECT, heading);
                 email.putExtra(Intent.EXTRA_TEXT, message);
-
-
                 email.setType("message/rfc822");
 
                 startActivity(Intent.createChooser(email, "Choose an Email client :"));
 
             }
-
         });
     }
-
-
-
-
 }
